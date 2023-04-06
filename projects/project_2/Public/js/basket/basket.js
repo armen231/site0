@@ -105,13 +105,12 @@ function delet_product(event) {
                 count_all_cost += Number(document.querySelector("body .body2 .section2 .container .content2 .content ." + event.target.classList[1] + event.target.classList[2] + "_t1 > .span1").textContent.replace(/ /g, ''));
             }
         }
-        document.querySelector("body .body2 .section2 .container .order .div_button_order .total").textContent = "Итог: " + count_all_cost;
+        document.querySelector("body .body2 .section2 .container .order .div_button_order .total").textContent = "Итог: " + count_all_cost + " ₽";
 
-        document.querySelector("body .body2 .section2 .container .order .text1").textContent = "Подитог: " + String(count_all_cost);
+        document.querySelector("body .body2 .section2 .container .order .text1").textContent = "Подитог: " + String(count_all_cost) + " ₽";
 
         basket_c[event.target.classList[1]][event.target.classList[1] + event.target.classList[2]].count_product = select_count_product;
         document.cookie = encodeURIComponent("basket") + "=" + JSON.stringify(basket_c) + "; path=/";
-
     }
 
 }
@@ -125,5 +124,6 @@ function update_basket_click() {
 
 document.querySelector("body .body2 .section2 .container .order .div_button_order .order").addEventListener("click", order_click);
 function order_click() {
-    window.location.href = "https://armen231.github.io/site/projects/project_2/Public/order.html";
+    if (count_all_cost != 0) { window.location.href = "https://armen231.github.io/site/projects/project_2/Public/order.html"; }
+    else { alert("Для оформления заказа необходимо добавить товар в корзину"); }
 }
