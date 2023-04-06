@@ -43,7 +43,7 @@ function load_content(count, name_product) {
 
 document.querySelector(".body .body2 .section2 .container .content2 .content2__content2 .post_order").addEventListener("click", post_order_click);
 function post_order_click(){
-    window.location.href = "http://site/order2.html";
+    window.location.href = "https://armen231.github.io/site/projects/project_2/Public/order2.html";
 }
 
 document.querySelector(".body .body2 .section2 .container .content2 .content2__content2 div .button").addEventListener("click", button_click);

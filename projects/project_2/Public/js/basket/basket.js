@@ -65,7 +65,7 @@ function delet_product(event) {
 
         delete basket_c[event.target.classList[1]][event.target.classList[2]];
         document.cookie = encodeURIComponent("basket") + "=" + JSON.stringify(basket_c) + "; path=/";
-        window.location.href = "http://site/basket.html";
+        window.location.href = "https://armen231.github.io/site/projects/project_2/Public/basket.html";
     }
 
 
@@ -119,11 +119,11 @@ function delet_product(event) {
 
 document.querySelector("body .body2 .section2 .container .update_basket").addEventListener("click", update_basket_click);
 function update_basket_click() {
-    window.location.href = "http://site/basket.html";
+    window.location.href = "https://armen231.github.io/site/projects/project_2/Public/basket.html";
 }
 
 
 document.querySelector("body .body2 .section2 .container .order .div_button_order .order").addEventListener("click", order_click);
 function order_click() {
-    window.location.href = "http://site/order.html";
+    window.location.href = "https://armen231.github.io/site/projects/project_2/Public/order.html";
 }

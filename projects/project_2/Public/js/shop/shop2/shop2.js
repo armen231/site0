@@ -201,7 +201,7 @@ function add_number_click() {
 
         document.querySelector(".body .body2 .section2 .container .data div .basket .add_number").textContent = "Добавить в корзину";
     }
-    window.location.href = "http://site/shop2.html";
+    window.location.href = "https://armen231.github.io/site/projects/project_2/Public/shop2.html";
 }
 
 
@@ -215,7 +215,7 @@ function select_collection__img(event) {
     if (event.target.parentNode.classList.length == 2 && event.target.parentNode.classList[0] == "collection__img") {
         document.cookie =
             encodeURIComponent("select_product") + "=" + encodeURIComponent(event.target.parentNode.classList[1]) + "; path=/; max-age=10";
-        window.location.href = "http://site/shop2.html";
+        window.location.href = "https://armen231.github.io/site/projects/project_2/Public/shop2.html";
     }
 }
 

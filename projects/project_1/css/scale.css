@@ -17,20 +17,26 @@
     flex-direction: column;
     overflow: auto;
   }
-  .container .header .nav .nav_list .search, .container .header .nav .nav_list .shop {
+  .container .header .nav .nav_list .search,
+  .container .header .nav .nav_list .shop {
     display: block;
   }
-  .container .header .nav .nav_list .nav_items, .container .header .nav .nav_list .search, .container .header .nav .nav_list .shop {
+  .container .header .nav .nav_list .nav_items,
+  .container .header .nav .nav_list .search,
+  .container .header .nav .nav_list .shop {
     margin: 5px 0px 5px 0px;
     text-align: start;
   }
-  .container .header .nav .nav_list .nav_items a, .container .header .nav .nav_list .search a, .container .header .nav .nav_list .shop a {
+  .container .header .nav .nav_list .nav_items a,
+  .container .header .nav .nav_list .search a,
+  .container .header .nav .nav_list .shop a {
     font-size: 20px;
   }
   .container .header .nav._active {
     left: 0%;
   }
-  .container .header .search_shop_menu .btn_search, .container .header .search_shop_menu .btn_shop {
+  .container .header .search_shop_menu .btn_search,
+  .container .header .search_shop_menu .btn_shop {
     display: none;
   }
   .container .header .search_shop_menu .btn_menu {
@@ -292,5 +298,287 @@
   .container .footer .footer_content_content_2 {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 1300px) {
+  .container .header {
+    height: 80px;
+    margin: 0px 40px;
+  }
+  .container .header .logo {
+    width: 170px;
+  }
+  .container .header .nav .nav_list .nav_items,
+  .container .header .nav .nav_list .search,
+  .container .header .nav .nav_list .shop {
+    margin: 0px 20px 0px 0px;
+    padding: 5px 10px 5px 10px;
+  }
+  .container .section_1 {
+    margin: 28px 40px;
+    height: 550px;
+  }
+  .container .section_1 .title .text {
+    top: 145px;
+    left: 56px;
+  }
+  .container .section_1 .title .text .text_items_1 {
+    font-size: 58px;
+    line-height: 70px;
+  }
+  .container .section_1 .title .text .text_items_2 {
+    margin: 18px 0px 30px 0px;
+  }
+  .container .section_1 .title .text .text_items_3 {
+    width: 170px;
+    height: 50px;
+    border-radius: 200px;
+  }
+  .container .section_1 .image .image_items {
+    width: 550px;
+    height: 540px;
+  }
+  .container .section_2 {
+    margin: 55px 40px;
+  }
+  .container .section_2 .title .text_2 {
+    width: 628px;
+  }
+  .container .section_2 .category {
+    column-gap: 16px;
+    margin: 56px 0px 0px 0px;
+  }
+  .container .section_2 .category .category_1 {
+    row-gap: 72px;
+  }
+  .container .section_2 .category .category_1 .laptops {
+    width: 636px;
+    height: 472px;
+  }
+  .container .section_2 .category .category_1 .laptops .laptop_content .text_2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .container .section_2 .category .category_1 .watch {
+    width: 636px;
+  }
+  .container .section_2 .category .category_1 .watch .watch_content .image_watch {
+    width: 381px;
+  }
+  .container .section_2 .category .category_1 .watch .watch_content .watch_content_text .text_2,
+  .container .section_2 .category .category_1 .watch .watch_content .watch_content_text .text_3 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .container .section_2 .category .category_2 .phones {
+    width: 301px;
+    height: 792px;
+  }
+  .container .section_2 .category .category_2 .phones .phone_content {
+    height: 504px;
+  }
+  .container .section_2 .category .category_2 .phones .phone_content .images_phones {
+    height: 367px;
+    width: calc(100% - 16px);
+  }
+  .container .section_2 .category .category_2 .phones .phone_content .text_1 {
+    margin: 42px 0px 0px 0px;
+  }
+  .container .section_2 .category .category_2 .phones .phone_content .text_2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .container .section_2 .category .category_2 .phones .phone_content .text_3 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .container .section_2 .category .category_2 .tablet {
+    width: 301px;
+    height: 792px;
+  }
+  .container .section_2 .category .category_2 .tablet .tablet_content {
+    width: 100%;
+    height: 561px;
+  }
+  .container .section_2 .category .category_2 .tablet .tablet_content .text_3 {
+    margin: 0px 0px 42px 0px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .container .section_2 .category .category_2 .tablet .tablet_content .text_2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .container .section_2 .category .category_2 .tablet .tablet_content .images_tablet {
+    height: 561px;
+  }
+  .container .section_3 {
+    margin: 58px 40px 0px;
+  }
+  .container .section_3 .text_1 {
+    margin: 19px 0px 0px 0px;
+  }
+  .container .section_3 .product {
+    margin: 31px 0px 0px 0px;
+    column-gap: 43.3px;
+  }
+  .container .section_3 .product .product_content_1 {
+    column-gap: 43.3px;
+  }
+  .container .section_3 .product .product_content_1 .MacBook_Pro_13 {
+    width: 302.5px;
+  }
+  .container .section_3 .product .product_content_1 .MacBook_Pro_13 .content_text .text_1 {
+    font-size: 22px;
+    line-height: 27.5px;
+  }
+  .container .section_3 .product .product_content_1 .MacBook_Pro_13 .content_text .text_3 {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+  .container .section_3 .product .product_content_1 .Smart_Galaxy_Watch_3 {
+    width: 302.5px;
+  }
+  .container .section_3 .product .product_content_1 .Smart_Galaxy_Watch_3 .content_text .text_1 {
+    font-size: 22px;
+    line-height: 27.5px;
+  }
+  .container .section_3 .product .product_content_1 .Smart_Galaxy_Watch_3 .content_text .text_3 {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+  .container .section_3 .product .product_content_2 {
+    column-gap: 43.3px;
+  }
+  .container .section_3 .product .product_content_2 .MacBook_Air_M1 {
+    width: 302.5px;
+  }
+  .container .section_3 .product .product_content_2 .MacBook_Air_M1 .content_text .text_1 {
+    font-size: 22px;
+    line-height: 27.5px;
+    text-align: start;
+  }
+  .container .section_3 .product .product_content_2 .MacBook_Air_M1 .content_text .text_3 {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+  .container .section_3 .product .product_content_2 .iPad {
+    width: 302.5px;
+  }
+  .container .section_3 .product .product_content_2 .iPad .content_text .text_1 {
+    font-size: 22px;
+    line-height: 27.5px;
+    text-align: start;
+  }
+  .container .section_3 .product .product_content_2 .iPad .content_text .text_3 {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+  .container .section_4 {
+    margin: 28px 40px 0px 40px;
+  }
+  .container .section_4 .View_best {
+    margin: 56px 0px 0px 0px;
+    column-gap: 28px;
+  }
+  .container .section_4 .View_best .View_best_items_1 {
+    height: 453px;
+  }
+  .container .section_4 .View_best .View_best_items_1 .text_2 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .container .section_4 .View_best .View_best_items_1 .text_3 {
+    width: 190px;
+    height: 50px;
+    border-radius: 200px;
+  }
+  .container .section_4 .View_best .View_best_items_2 {
+    height: 453px;
+  }
+  .container .section_4 .View_best .View_best_items_2 .text_2 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .container .section_4 .View_best .View_best_items_2 .text_3 {
+    width: 190px;
+    height: 50px;
+    border-radius: 200px;
+  }
+  .container .section_4 .View_best .View_best_items_3 {
+    height: 453px;
+  }
+  .container .section_4 .View_best .View_best_items_3 .text_2 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .container .section_4 .View_best .View_best_items_3 .text_3 {
+    width: 190px;
+    height: 50px;
+    border-radius: 200px;
+  }
+  .container .section_5 .content .image {
+    width: 620px;
+  }
+  .container .section_5 .content .content_text_1 .text_items_1,
+  .container .section_5 .content .content_text_1 .text_items_2,
+  .container .section_5 .content .content_text_1 .text_items_3,
+  .container .section_5 .content .content_text_1 .text_items_4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .container .section_5 .content .content_text_1 .text_items_1 {
+    margin: 14px 0px 23px 0px;
+  }
+  .container .section_5 .content .content_text_1 .text_items_2,
+  .container .section_5 .content .content_text_1 .text_items_3 {
+    margin: 23px 0px;
+  }
+  .container .section_5 .content .content_text_1 .text_items_4 {
+    margin: 23px 0px 14px 0px;
+  }
+  .container .section_5 .content_text_2 {
+    margin: 74px 0px 0px 0px;
+  }
+  .container .section_5 .content_text_2 .content_text_2_text {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+  .container .section_6 {
+    margin: 0px 40px 0px;
+  }
+  .container .section_6 .section_6_search .input_search {
+    width: 552px;
+  }
+  .container .section_6 .section_6_input_email {
+    width: 935px;
+  }
+  .container .section_6 .section_6_input_email .image {
+    width: 233px;
+  }
+  .container .section_6 .section_6_input_email .section_6_input_email_input {
+    width: 400px;
+  }
+  .container .section_6 .section_6_input_email .section_6_input_email_input .input_text {
+    width: 247px;
+  }
+  .container .footer .footer_content_content_1 {
+    margin: 19px 40px;
+  }
+  .container .footer .footer_content_content_1 .content_1_logo {
+    width: 422px;
+  }
+  .container .footer .footer_content_content_1 .content {
+    column-gap: 28px;
+  }
+  .container .footer .footer_content_content_1 .content div {
+    width: 197px;
+  }
+  .container .footer .footer_content_content_1 .content div div:nth-child(1) {
+    font-size: 22px;
+    line-height: 27.5px;
+  }
+  .container .footer .footer_content_content_2 {
+    margin: 64px 40px 0px 40px;
   }
 }

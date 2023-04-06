@@ -454,5 +454,5 @@ document.querySelector(".menu__item > .callback").addEventListener("click", phon
 
 document.querySelector("body .body2 .header .phone-basket .basket__div").addEventListener("click", basket_click);
 function basket_click() {
-    window.location.href = "http://site/basket.html";
+    window.location.href = "https://armen231.github.io/site/projects/project_2/Public/basket.html";
 }
