@@ -53,8 +53,8 @@ function load_content(count, name_product) {
         }
     }
 
-    document.querySelector("body .body2 .section2 .container .order .text1").textContent = "Подитог: " + count_all_cost;
-    document.querySelector("body .body2 .section2 .container .order .div_button_order .total").textContent = "Итог: " + count_all_cost;
+    document.querySelector("body .body2 .section2 .container .order .text1").textContent = "Подитог: " + count_all_cost + " ₽";
+    document.querySelector("body .body2 .section2 .container .order .div_button_order .total").textContent = "Итог: " + count_all_cost + " ₽";
 }
 
 
