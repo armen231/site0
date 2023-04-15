@@ -300,7 +300,10 @@
     align-items: center;
   }
 }
-@media (max-width: 1300px) {
+@media (min-width: 1088px) {
+  .container {
+    width: 1088px;
+  }
   .container .header {
     height: 80px;
     margin: 0px 40px;
@@ -352,7 +355,7 @@
     row-gap: 72px;
   }
   .container .section_2 .category .category_1 .laptops {
-    width: 636px;
+    width: 448px;
     height: 472px;
   }
   .container .section_2 .category .category_1 .laptops .laptop_content .text_2 {
@@ -360,10 +363,16 @@
     line-height: 38px;
   }
   .container .section_2 .category .category_1 .watch {
-    width: 636px;
+    width: 448px;
+  }
+  .container .section_2 .category .category_1 .watch .watch_content {
+    flex-direction: column;
   }
   .container .section_2 .category .category_1 .watch .watch_content .image_watch {
     width: 381px;
+  }
+  .container .section_2 .category .category_1 .watch .watch_content .watch_content_text {
+    align-self: end;
   }
   .container .section_2 .category .category_1 .watch .watch_content .watch_content_text .text_2,
   .container .section_2 .category .category_1 .watch .watch_content .watch_content_text .text_3 {
@@ -371,7 +380,7 @@
     line-height: 38px;
   }
   .container .section_2 .category .category_2 .phones {
-    width: 301px;
+    width: 261px;
     height: 792px;
   }
   .container .section_2 .category .category_2 .phones .phone_content {
@@ -379,7 +388,6 @@
   }
   .container .section_2 .category .category_2 .phones .phone_content .images_phones {
     height: 367px;
-    width: calc(100% - 16px);
   }
   .container .section_2 .category .category_2 .phones .phone_content .text_1 {
     margin: 42px 0px 0px 0px;
@@ -393,11 +401,10 @@
     line-height: 38px;
   }
   .container .section_2 .category .category_2 .tablet {
-    width: 301px;
+    width: 261px;
     height: 792px;
   }
   .container .section_2 .category .category_2 .tablet .tablet_content {
-    width: 100%;
     height: 561px;
   }
   .container .section_2 .category .category_2 .tablet .tablet_content .text_3 {
@@ -420,24 +427,27 @@
   }
   .container .section_3 .product {
     margin: 31px 0px 0px 0px;
-    column-gap: 43.3px;
+    column-gap: 32.3px;
   }
   .container .section_3 .product .product_content_1 {
-    column-gap: 43.3px;
+    column-gap: 32.3px;
   }
   .container .section_3 .product .product_content_1 .MacBook_Pro_13 {
-    width: 302.5px;
+    width: 222.5px;
   }
   .container .section_3 .product .product_content_1 .MacBook_Pro_13 .content_text .text_1 {
     font-size: 22px;
     line-height: 27.5px;
+  }
+  .container .section_3 .product .product_content_1 .MacBook_Pro_13 .content_text .text_2 {
+    color: rgb(75, 75, 75);
   }
   .container .section_3 .product .product_content_1 .MacBook_Pro_13 .content_text .text_3 {
     font-size: 18px;
     line-height: 21.6px;
   }
   .container .section_3 .product .product_content_1 .Smart_Galaxy_Watch_3 {
-    width: 302.5px;
+    width: 222.5px;
   }
   .container .section_3 .product .product_content_1 .Smart_Galaxy_Watch_3 .content_text .text_1 {
     font-size: 22px;
@@ -448,27 +458,25 @@
     line-height: 21.6px;
   }
   .container .section_3 .product .product_content_2 {
-    column-gap: 43.3px;
+    column-gap: 32.3px;
   }
   .container .section_3 .product .product_content_2 .MacBook_Air_M1 {
-    width: 302.5px;
+    width: 222.5px;
   }
   .container .section_3 .product .product_content_2 .MacBook_Air_M1 .content_text .text_1 {
     font-size: 22px;
     line-height: 27.5px;
-    text-align: start;
   }
   .container .section_3 .product .product_content_2 .MacBook_Air_M1 .content_text .text_3 {
     font-size: 18px;
     line-height: 21.6px;
   }
   .container .section_3 .product .product_content_2 .iPad {
-    width: 302.5px;
+    width: 222.5px;
   }
   .container .section_3 .product .product_content_2 .iPad .content_text .text_1 {
     font-size: 22px;
     line-height: 27.5px;
-    text-align: start;
   }
   .container .section_3 .product .product_content_2 .iPad .content_text .text_3 {
     font-size: 18px;
@@ -516,6 +524,9 @@
     width: 190px;
     height: 50px;
     border-radius: 200px;
+  }
+  .container .section_5 {
+    margin: 0px 40px;
   }
   .container .section_5 .content .image {
     width: 620px;
@@ -577,6 +588,12 @@
   .container .footer .footer_content_content_1 .content div div:nth-child(1) {
     font-size: 22px;
     line-height: 27.5px;
+  }
+  .container .footer .footer_content_content_1 .content div:nth-child(4) {
+    width: auto;
+  }
+  .container .footer .footer_content_content_1 .content div:nth-child(4) div {
+    width: 100%;
   }
   .container .footer .footer_content_content_2 {
     margin: 64px 40px 0px 40px;

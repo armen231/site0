@@ -1,6 +1,76 @@
 @use "mixin" as *;
-body{
-    background: rgb(43, 43, 43);
+
+body {
+    background: white;
     display: flex;
     flex-direction: column;
+
+    .main_container {
+        margin: 0px auto;
+        max-width: 1100px;
+
+        .section1 {
+            margin: 60px 0px 60px 0px;
+            width: 100%;
+
+            .container {
+                margin: 0px auto;
+                @include sc_width(230, 1110, 250, 1600);
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                @include sc_column-gap(30 ,60 ,400 ,1600 );
+                justify-content: space-between;
+
+                .project {
+                    border-radius: 30px;
+                    @include sc_border-radius(15 ,30 , 250 ,1600 );
+                    padding: calc(10px + (30 - 10) * ((100vw - 250px) / (1600 - 250))) ;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    transition: 0.5s;
+                    box-shadow: 0px 0px 70px rgba(0, 122, 204, 0.1);
+
+                    img {
+                        width: 100%;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid rgba(0, 122, 204, 1);
+                        border-radius: 5px 5px 0px 0px;
+                    }
+
+                    .open_site {
+                        align-self: center;
+                        padding: 10px 30px 10px 30px;
+                        background: transparent;
+                        border-radius: 5px;
+                        border: 1px solid #007acc;
+                        color: #007acc;
+                        transition: 0.5s;
+
+                    }
+
+                    .open_site_touch1 {
+                        &:active {
+                            color: white;
+                            background: #007acc;
+                        }
+                    }
+
+                    .open_site_touch0 {
+                        &:hover {
+                            color: white;
+                            background: #007acc;
+                        }
+                    }
+                }
+
+                .project_touch0 {
+                    &:hover {
+                        box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.4);
+                    }
+                }
+            }
+        }
+    }
 }

@@ -842,8 +842,9 @@
     }
 }
 
-@media (max-width: 1300px) {
+@media (min-width: 1088px) {
     .container {
+        width: 1088px;
 
         .header {
             height: 80px;
@@ -863,8 +864,6 @@
                         margin: 0px 20px 0px 0px;
                         padding: 5px 10px 5px 10px;
                     }
-
-
                 }
             }
         }
@@ -899,7 +898,6 @@
             .image {
 
                 .image_items {
-
                     width: 550px;
                     height: 540px;
                     
@@ -912,7 +910,6 @@
             margin: 55px 40px;
 
             .title {
-
                 .text_2 {
                     width: 628px;
                 }
@@ -926,7 +923,7 @@
                     row-gap: 72px;
 
                     .laptops {
-                        width: 636px;
+                        width: 448px;
                         height: 472px;
 
                         .laptop_content {
@@ -939,16 +936,17 @@
                     }
 
                     .watch {
-                        width: 636px;
+                        width: 448px;
 
                         .watch_content {
+                            flex-direction: column;
 
                             .image_watch {
                                 width: 381px;
                             }
 
                             .watch_content_text {
-
+                                align-self: end;
                                 .text_2,
                                 .text_3 {
                                     font-size: 32px;
@@ -962,7 +960,7 @@
                 .category_2 {
 
                     .phones {
-                        width: 301px;
+                        width: 261px;
                         height: 792px;
 
                         .phone_content {
@@ -970,7 +968,6 @@
 
                             .images_phones {
                                 height: 367px;
-                                width: calc(100% - 16px);
                             }
 
 
@@ -991,11 +988,10 @@
                     }
 
                     .tablet {
-                        width: 301px;
+                        width: 261px;
                         height: 792px;
 
                         .tablet_content {
-                            width: 100%;
                             height: 561px;
 
                             .text_3 {
@@ -1027,13 +1023,13 @@
 
             .product {
                 margin: 31px 0px 0px 0px;
-                column-gap: 43.3px;
+                column-gap: 32.3px;
 
                 .product_content_1 {
-                    column-gap: 43.3px;
+                    column-gap: 32.3px;
 
                     .MacBook_Pro_13 {
-                        width: 302.5px;
+                        width: 222.5px;
 
                         .content_text {
 
@@ -1041,6 +1037,10 @@
                             .text_1 {
                                 font-size: 22px;
                                 line-height: 27.5px;
+                            }
+
+                            .text_2 {
+                                color: rgba(75, 75, 75, 1);
                             }
 
                             .text_3 {
@@ -1051,7 +1051,7 @@
                     }
 
                     .Smart_Galaxy_Watch_3 {
-                        width: 302.5px;
+                        width: 222.5px;
 
                         .content_text {
 
@@ -1069,17 +1069,16 @@
                 }
 
                 .product_content_2 {
-                    column-gap: 43.3px;
+                    column-gap: 32.3px;
 
                     .MacBook_Air_M1 {
-                        width: 302.5px;
+                        width: 222.5px;
 
                         .content_text {
 
                             .text_1 {
                                 font-size: 22px;
                                 line-height: 27.5px;
-                                text-align: start;
                             }
 
                             .text_3 {
@@ -1090,14 +1089,13 @@
                     }
 
                     .iPad {
-                        width: 302.5px;
+                        width: 222.5px;
 
                         .content_text {
 
                             .text_1 {
                                 font-size: 22px;
                                 line-height: 27.5px;
-                                text-align: start;
                             }
 
                             .text_3 {
@@ -1112,6 +1110,7 @@
 
         .section_4 {
             margin: 28px 40px 0px 40px;
+
 
             .View_best {
                 margin: 56px 0px 0px 0px;
@@ -1144,6 +1143,7 @@
                         width: 190px;
                         height: 50px;
                         border-radius: 200px;
+
                     }
                 }
 
@@ -1160,14 +1160,13 @@
                         height: 50px;
                         border-radius: 200px;
                     }
-
-                
                 }
             }
 
         }
 
         .section_5 {
+            margin: 0px 40px;
 
             .content {
 
@@ -1176,7 +1175,6 @@
                 }
 
                 .content_text_1 {
-
 
                     .text_items_1,
                     .text_items_2,
@@ -1257,6 +1255,13 @@
                         div:nth-child(1) {
                             font-size: 22px;
                             line-height: 27.5px;
+                        }
+                    }
+
+                    div:nth-child(4){
+                        width: auto;
+                        div{
+                            width: 100%;
                         }
                     }
                 }

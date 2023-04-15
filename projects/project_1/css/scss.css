@@ -30,8 +30,13 @@ p {
   color: rgb(0, 0, 0);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
-  width: 100%;
+  max-width: 1100px;
+  margin: 0px auto;
 }
 .container .header {
   height: calc(40px + 40 * (100vw - 320px) / 1046);

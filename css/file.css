@@ -89,7 +89,83 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background: rgb(43, 43, 43);
+  background: white;
   display: flex;
   flex-direction: column;
+}
+body .main_container {
+  margin: 0px auto;
+  max-width: 1100px;
+}
+body .main_container .section1 {
+  margin: 60px 0px 60px 0px;
+  width: 100%;
+}
+body .main_container .section1 .container {
+  margin: 0px auto;
+  max-width: 1110px;
+  width: calc(230px + 880 * (100vw - 250px) / 1350);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: calc(30px + 30 * (100vw - 400px) / 1200);
+  justify-content: space-between;
+}
+body .main_container .section1 .container .project {
+  border-radius: 30px;
+  border-radius: calc(15px + 15 * (100vw - 250px) / 1350);
+  padding: calc(10px + 20 * (100vw - 250px) / 1350);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  transition: 0.5s;
+  box-shadow: 0px 0px 70px rgba(0, 122, 204, 0.1);
+}
+body .main_container .section1 .container .project img {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(0, 122, 204);
+  border-radius: 5px 5px 0px 0px;
+}
+body .main_container .section1 .container .project .open_site {
+  align-self: center;
+  padding: 10px 30px 10px 30px;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #007acc;
+  color: #007acc;
+  transition: 0.5s;
+}
+body .main_container .section1 .container .project .open_site_touch1:active {
+  color: white;
+  background: #007acc;
+}
+body .main_container .section1 .container .project .open_site_touch0:hover {
+  color: white;
+  background: #007acc;
+}
+body .main_container .section1 .container .project_touch0:hover {
+  box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 400px) {
+  body .main_container .section1 .container {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+@media (min-width: 1600px) {
+  body .main_container .section1 .container {
+    column-gap: 60px;
+  }
+  body .main_container .section1 .container .project {
+    border-radius: 30px;
+    padding: 30px;
+  }
+  body .main_container .section1 .container .project img {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 122, 204, 0.3);
+    border-radius: 5px 5px 0px 0px;
+  }
 }

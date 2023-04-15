@@ -272,6 +272,7 @@ body .body2 .popup2 .container .close:hover {
 }
 body .body2 .header {
   z-index: 1;
+  max-width: 1110px;
   width: calc(350px + 760 * (100vw - 320px) / 1280);
   max-height: 28px;
   display: flex;
@@ -388,6 +389,7 @@ body .body2 .footer {
 body .body2 .footer .container {
   margin: 0px auto;
   padding: 0px 0px calc(30px + 71 * (100vw - 320px) / 1280) 0px;
+  max-width: 1110px;
   width: calc(300px + 810 * (100vw - 320px) / 1280);
   display: flex;
   flex-direction: column;
@@ -418,6 +420,7 @@ body .body2 .footer .container .container1 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 400px;
   width: calc(320px + 80 * (100vw - 960px) / 640);
   margin: calc(0px + 0 * (100vw - 904px) / 474) calc(40px + 130 * (100vw - 904px) / 474) calc(0px + 0 * (100vw - 904px) / 474) calc(0px + 0 * (100vw - 904px) / 474);
 }
@@ -480,6 +483,7 @@ body .body2 .footer .container .container2 .network {
     overflow: hidden;
   }
   body .body2 .header {
+    max-width: 1110px;
     width: calc(260px + 850 * (100vw - 320px) / 1058);
   }
   body .body2 .header .menu {
@@ -639,6 +643,7 @@ body .body2 .section1 {
   margin-bottom: calc(10px + 204 * (100vw - 250px) / 1350);
 }
 body .body2 .section1 .container {
+  max-width: 1110px;
   width: calc(300px + 810 * (100vw - 320px) / 1280);
   margin: 0px auto;
 }
@@ -658,6 +663,7 @@ body .body2 .section2 {
   margin-bottom: calc(30px + 100 * (100vw - 250px) / 1350);
 }
 body .body2 .section2 .container {
+  max-width: 1110px;
   width: calc(300px + 810 * (100vw - 320px) / 1280);
   margin: 0px auto;
   display: flex;
@@ -737,6 +743,7 @@ body .body2 .section2 .container .text2 .form .message_send._active {
     row-gap: 20px;
   }
   body .body2 .section2 .container .text2 .form {
+    max-width: 443px;
     width: calc(240px + 203 * (100vw - 250px) / 350);
   }
 }

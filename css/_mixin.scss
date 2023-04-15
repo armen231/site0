@@ -20,11 +20,13 @@
 
 
 @mixin sc_width($min_value, $max_value, $min_width, $max_width) {
+    max-width: $max_value * 1px;
     width: calc($min_value * 1px + ($max_value - $min_value) * ((100vw - $min_width * 1px) / ($max_width - $min_width)));
     // calc(10px + (50 - 10) * ((100vw - 320px) / (1366 - 320)));
 }
 
 @mixin sc_height($min_value, $max_value, $min_width, $max_width) {
+    max-width: $max_value * 1px;
     height: calc($min_value * 1px + ($max_value - $min_value) * ((100vw - $min_width * 1px) / ($max_width - $min_width)));
     // calc(10px + (50 - 10) * ((100vw - 320px) / (1366 - 320)));
 }
